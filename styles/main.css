@@ -1,0 +1,404 @@
+
+.mountain-range-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.mountain-range-block h1 {
+    font-family: "Ruslan Display";
+    position: absolute;
+    z-index: 10;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 140px;
+    letter-spacing: 6px;
+}
+
+#mountain-bg{
+    width: 100%;
+    height: auto;
+    margin-top: -200px;
+}
+.background-nav a {
+    color: #FEFCF5;
+    font-size: 20px;
+}
+
+.hora1 {
+    position: absolute;
+    left: 50px;
+    top: 500px;
+}
+.hora2 {
+    position: absolute;
+    left: 472px;
+    top: 310px;
+}
+.hora3 {
+    position: absolute;
+    left: 880px;
+    top: 375px;
+}
+.hora4 {
+    position: absolute;
+    left: 1170px;
+    top: 428px;
+}
+
+.header-nav a {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.comments {
+    padding: 50px 50px 0;
+}
+
+.comments-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.comment {
+    width: 650px;
+    background-color: #FEFCF5;
+    padding: 30px;
+    border-radius: 90px 0 50px 50px;
+    box-shadow: 0 0 10px 0 rgba(51, 87, 81, 0.25);
+}
+
+.comment .upper-section, .comment  .lower-section {
+    display: flex;
+    gap: 40px;
+}
+
+.comment .lower-section {
+    padding-top: 20px;
+}
+
+.comment .image-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 63px;
+    width: 126px;
+    height: 126px;
+}
+
+.comment img {
+    width: auto;
+    height: 126px;
+}
+
+.comment .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding-top: 15px;
+}
+
+.comment .user-profile p {
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.comment .text-section p, .comment .text-section span {
+    padding-bottom: 5px;
+    font-size: 15px;
+    margin: 0;
+}
+
+.comment .text-section a {
+    padding-left: 15px;
+}
+
+.text-section a:link {
+    color: #C2644F;
+}
+
+.text-section a:visited {
+    color: #485454;
+}
+
+.comment .text-section p {
+    color: rgba(31, 48, 48, 0.5);
+}
+
+.comment .text-section span {
+    line-height: 20px;
+}
+
+.comment .lower-section h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.comment .lower-section button {
+    white-space: nowrap;
+    border: 0;
+    border-radius: 10px;
+    background-color: #C2644F;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.comment .lower-section button:hover {
+    background-color: #d66b54;
+}
+
+.comment .lower-section button:active {
+    background-color: #b05946;
+}
+
+.why-we-are-trusted {
+    padding: 50px;
+}
+
+.why-we-are-trusted h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.why-we-are-trusted ol li:not(:last-child){
+    padding-bottom: 15px;
+}
+.toolbar {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    max-width: 900px; 
+    margin: 0 auto;
+    background-color: #FEFCF5;
+    padding: 10px 10px;
+    align-items: center;
+    position: absolute; 
+    top: 600px;
+    left: 0;
+    right: 0;
+    border-radius: 7px;
+}
+
+.dropdown {
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    padding-left: 20px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    border-left: 2px solid #1F3030;
+}
+
+.dropdown:first-child{
+    border-left: none;
+    padding-left: 0; 
+}
+
+.dropbtn {
+    background-color: #FEFCF5;
+    color: #1F3030;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.date-picker {
+    display: none;
+    position: absolute;
+    background-color: #FFFDF8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFDF8;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown .dropbtn:focus + .date-picker {
+    display: block;
+}
+
+.search-btn {
+    background-color: #C2644F;
+    color: #FFFDF8;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 7px;
+}
+.tours {
+    padding: 10px 10px 0;
+}
+.tours h1{
+    color: #FEFCF5;
+    text-align: center;
+    position: absolute;
+    top: 920px;
+    left: 0px;
+    right: 0px;
+    font-size: 43px;
+}
+
+.tours-list {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 341px;
+    background-color: #FEFCF5;
+    border-radius: 38px 3px 20px 20px;
+    box-shadow: 3px 3px 10px 3px rgba(51, 87, 81, 0.25);
+}
+
+
+.card .tour-image {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 341px;
+    height: 222px;
+    border-radius: 38px 3px 0 0;
+}
+
+.card h5 {
+    width: 283px;
+    color: #1F3030;
+    font-size: 17.5px;
+    font-family: Unbounded;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    word-wrap: break-word;
+    margin: 0; /* Видаляє стандартні відступи для заголовків */
+    padding-left: 15px;
+    text-align: left;
+}
+
+.upper-section {
+    display: block; /* Забезпечує, що всі елементи у контейнері йдуть один за одним вертикально */
+    text-align: center; /* Центрує текст під зображенням */
+ /* Відступ всередині контейнера */
+}
+
+.upper-section img {
+    width: 100%; /* Встановлює ширину зображення на 100% від ширини контейнера */
+    height: auto; /* Забезпечує збереження пропорцій зображення */
+    display: block; /* Зображення стає блочним елементом */
+    /* Відступ між зображенням і текстом */
+    margin-bottom: 10px;
+}
+
+.central-section .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+}
+
+.central-section {
+    display: flex;
+    align-items: center; /* Центрує елементи по вертикалі */
+    border-radius: 25px; /* Закруглені краї */
+    padding: 10px 20px; /* Внутрішні відступи */
+    margin: 10px; /* Зовнішні відступи для відділення від інших секцій */
+}
+.info-item {
+    display: flex;
+    align-items: center; /* Центрує елементи по вертикалі */
+}
+
+.icon {
+    font-size: 24px; /* Більший розмір для видимості */
+    color: #CC3300; /* Червоний колір іконки */
+    margin-right: 5px; /* Відступ від іконки до тексту */
+    align-self: flex-start;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* Розміщує текст один над іншим */
+}
+
+.label, .value {
+    width: 100%; /* Змушує елемент займати повну ширину свого контейнера */
+    white-space: nowrap; /* Запобігає обтіканню тексту */
+}
+
+.label {
+    font-size: 13px; /* Менший розмір шрифта для мітки */
+    color: #666666; /* Темно-сірий колір тексту */
+    margin-bottom: 0; /* Видаліть відступ, якщо він був до цього */
+}
+
+.value {
+    font-size: 12px; /* Більший розмір шрифта для значення */
+    color: #333333; /* Ще темніший колір для основного тексту */
+    font-weight: 500; /* Жирний текст для підкреслення важливості */
+}
+
+.lower-section {
+    display: flex;
+    justify-content: space-between; /* Розташовує елементи рівномірно на всю ширину контейнера */
+    align-items: center; /* Центрує елементи по вертикалі */
+    padding: 10px 15px; /* Встановлює внутрішні відступи для всього розділу */
+}
+
+.guide {
+    display: flex;
+    align-items: center; /* Центрує іконку гіда та ім'я по вертикалі */
+}
+
+.guide-photo {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;  
+    min-height: 70px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px;
+    overflow: hidden; 
+}
+
+.guide-name {
+    font-weight: 500; /* Робить текст жирнішим */
+    color: #333; /* Темний колір тексту */
+    flex-grow: 1; /* Дозволяє імені гіда зайняти всю доступну ширину між фото і рейтингом */
+    line-height: 19px;
+}
+
+.rating {
+    color: #C2644F; /* Золотий колір для рейтингу */
+    margin-left: auto; /* Розташовує рейтинг на правому краю розділу */
+}
+
+.price {
+    background-color: #C2644F; /* Темно-червоний фон */
+    color: #FFF; /* Білий текст */
+    padding: 5px 15px; /* Внутрішні відступи для блоку з ціною */
+    border-radius: 20px 0 20px 0; /* Закруглені кути для блоку з ціною */
+    font-weight: 400;
+    text-align: center; /* Центрує текст в блоку ціни */
+}

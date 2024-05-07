@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Unbounded";
+}
+
+body {
+    margin: 0;
+    background-color: #FCF8EB;
+    line-height: 30px;
+    color: #1F3030;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+p, span {
+    font-weight: 200;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    background-color: #1F3030;
+    color: #FEFCF5;
+    position: fixed;  /* Змінено з 'relative' на 'fixed' */
+    top: 0;           /* Зафіксовано у верхній частині */
+    left: 0;          /* Зафіксовано до лівої сторони */
+    right: 0;         /* Зафіксовано до правої сторони */
+    z-index: 1000;    /* Забезпечує, що header завжди зверху інших елементів */
+}
+
+
+header img {
+    height: 34px;
+    width: auto;
+}
+
+.header-nav {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;  /* Зафіксувати позицію */
+    left: 50%;        /* Змістити початок елемента до центру по горизонталі */
+    transform: translateX(-50%); /* Змістити елемент на 50% його ширини назад, для точного центрування */
+    top: 20px;        /* Визначити вертикальне положення */
+    width: 100%;      /* Можна задати ширину, якщо потрібно охопити всю ширину сторінки */
+    z-index: 1000;    /* Забезпечити, що навігація буде над іншими елементами */
+}
+
+
+.header-nav span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.header-nav .page {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+footer {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: #1F3030;
+    color: white;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+footer h1, footer h4 {
+    margin: 0
+}
+
+footer > div:last-child {
+    margin-right: 130px;
+}
+
+footer div div {
+    gap: 10px;
+}
+
+footer div div svg{
+    height: 24px;
+}
