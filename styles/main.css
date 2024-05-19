@@ -21,6 +21,7 @@
     height: auto;
     margin-top: -200px;
 }
+
 .background-nav a {
     color: #FEFCF5;
     font-size: 20px;
@@ -53,32 +54,44 @@
 }
 
 .comments {
-    padding: 50px 50px 0;
+    padding: 50px 30px 0;
 }
 
 .comments-list {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
 }
 
 .comment {
-    width: 650px;
+    width: 700px;
     background-color: #FEFCF5;
     padding: 30px;
     border-radius: 90px 0 50px 50px;
     box-shadow: 0 0 10px 0 rgba(51, 87, 81, 0.25);
 }
 
-.comment .upper-section, .comment  .lower-section {
+.comment .upper-section, .comment  .lower-section, .comment .central-section {
     display: flex;
     gap: 40px;
 }
 
-.comment .lower-section {
-    padding-top: 20px;
+.comment .central-section {
+    justify-content: space-evenly;
+    margin-top: -20px;
+    margin-bottom: 5px;
 }
 
+.comment .lower-section {
+    padding-top: 12px;
+}
+
+.comment .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+}
 .comment .image-container {
     display: flex;
     justify-content: center;
@@ -107,29 +120,30 @@
 }
 
 .comment .text-section p, .comment .text-section span {
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     font-size: 15px;
     margin: 0;
 }
 
-.comment .text-section a {
-    padding-left: 15px;
-}
-
-.text-section a:link {
+.text-section a {
     color: #C2644F;
 }
 
-.text-section a:visited {
-    color: #485454;
+.comment .text-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+   
 }
 
 .comment .text-section p {
-    color: rgba(31, 48, 48, 0.5);
+    font-weight: 400;
+    color:  #1F3030;
 }
 
 .comment .text-section span {
-    line-height: 20px;
+    line-height: 25px;
+    font-weight: 300;
 }
 
 .comment .lower-section h3 {
@@ -137,6 +151,15 @@
     font-weight: 500;
 }
 
+.comment .label {
+    font-weight: 400;
+    color:  #1F3030;
+  }
+
+.comment .value {
+    font-size: 16px;
+    color: #C2644F;
+  }
 .comment .lower-section button {
     white-space: nowrap;
     border: 0;
@@ -177,10 +200,6 @@
     background-color: #FEFCF5;
     padding: 10px 10px;
     align-items: center;
-    position: absolute; 
-    top: 600px;
-    left: 0;
-    right: 0;
     border-radius: 7px;
 }
 
@@ -226,7 +245,7 @@
 }
 
 .dropdown-content a {
-    color: black;
+    color: 1F3030;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -251,154 +270,273 @@
     font-size: 20px;
     border-radius: 7px;
 }
-.tours {
-    padding: 10px 10px 0;
-}
-.tours h1{
-    color: #FEFCF5;
-    text-align: center;
-    position: absolute;
-    top: 920px;
-    left: 0px;
-    right: 0px;
-    font-size: 43px;
-}
 
-.tours-list {
+
+.tours h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .tours-list{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  ::selection{
+    background:	#C2644F;
+    color: #fff;
+  }
+  .container{
+    max-width: 1500px;
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 0;
+  }
+  .container .main-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+  .container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
     justify-content: space-between;
-}
-.card {
-    width: 341px;
+  }
+  .main-card .cards .card{
+    width: 342px;
+    height: 496px;
     background-color: #FEFCF5;
     border-radius: 38px 3px 20px 20px;
-    box-shadow: 3px 3px 10px 3px rgba(51, 87, 81, 0.25);
-}
+    box-shadow: 0 4px 8px rgba(51, 87, 81, 0.25);
+    transition: all 0.4s ease;
+  }
 
-
-.card .tour-image {
+  .main-card .cards .card:hover{
+    transform: translateY(-15px);
+  }
+  
+  .tour-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 38px 3px 0px 0px;
+  }
+  
+  .title {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    padding: 7px 15px;
+    color: #1F3030;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    background-color: #FEFCF5;
+  }
+  
+  .central-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -23px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    width: calc(50%);
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    width: 24px;
+    font-size: 20px;
+    color: #C2644F;
+    margin-right: 10px;
+    margin-left: 13px;
+  }
+  
+  .text-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 300;
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+  
+  .value {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -1px;
+    margin-bottom: -3px;
+  }
+  
+  .card .lower-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #EEEEEE;
+  }
+  
+  .lower-info {
+    display: flex;
+    align-items: left;
+  }
+  
+  .guide-photo {
+    width: 75px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .guide {
+    display: flex;
+    align-items: center;
+  }
+  
+  .guide-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5px;
+    margin-right: -15px;
+  }
+  
+  .guide-name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  
+  .rating {
+    font-size: 14px;
+    color: #C2644F;
+  }
+  
+  .price {
+    width: 160px;
+    height: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FEFCF5;
+    background-color: #C2644F;
+    border-radius: 20px 0 20px 0;
+    text-align: center;
+    border: 0;
+  }
+  
+   .container .button{
+    width: 100%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    width: 341px;
-    height: 222px;
-    border-radius: 38px 3px 0 0;
+    margin: 20px;
+  }
+  .button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #C2644F;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .button label.active{
+    width: 35px;
+  }
+  #one:checked ~ .button .one{
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+.photos h2 {
+    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-left: 60px;
 }
-
-.card h5 {
-    width: 283px;
-    color: #1F3030;
-    font-size: 17.5px;
-    font-family: Unbounded;
-    font-weight: 500;
-    letter-spacing: 0.48px;
-    word-wrap: break-word;
-    margin: 0; /* Видаляє стандартні відступи для заголовків */
-    padding-left: 15px;
-    text-align: left;
-}
-
-.upper-section {
-    display: block; /* Забезпечує, що всі елементи у контейнері йдуть один за одним вертикально */
-    text-align: center; /* Центрує текст під зображенням */
- /* Відступ всередині контейнера */
-}
-
-.upper-section img {
-    width: 100%; /* Встановлює ширину зображення на 100% від ширини контейнера */
-    height: auto; /* Забезпечує збереження пропорцій зображення */
-    display: block; /* Зображення стає блочним елементом */
-    /* Відступ між зображенням і текстом */
-    margin-bottom: 10px;
-}
-
-.central-section .info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 14px;
-}
-
-.central-section {
-    display: flex;
-    align-items: center; /* Центрує елементи по вертикалі */
-    border-radius: 25px; /* Закруглені краї */
-    padding: 10px 20px; /* Внутрішні відступи */
-    margin: 10px; /* Зовнішні відступи для відділення від інших секцій */
-}
-.info-item {
-    display: flex;
-    align-items: center; /* Центрує елементи по вертикалі */
-}
-
-.icon {
-    font-size: 24px; /* Більший розмір для видимості */
-    color: #CC3300; /* Червоний колір іконки */
-    margin-right: 5px; /* Відступ від іконки до тексту */
-    align-self: flex-start;
-}
-
-.text-content {
-    display: flex;
-    flex-direction: column; /* Розміщує текст один над іншим */
-}
-
-.label, .value {
-    width: 100%; /* Змушує елемент займати повну ширину свого контейнера */
-    white-space: nowrap; /* Запобігає обтіканню тексту */
-}
-
-.label {
-    font-size: 13px; /* Менший розмір шрифта для мітки */
-    color: #666666; /* Темно-сірий колір тексту */
-    margin-bottom: 0; /* Видаліть відступ, якщо він був до цього */
-}
-
-.value {
-    font-size: 12px; /* Більший розмір шрифта для значення */
-    color: #333333; /* Ще темніший колір для основного тексту */
-    font-weight: 500; /* Жирний текст для підкреслення важливості */
-}
-
-.lower-section {
-    display: flex;
-    justify-content: space-between; /* Розташовує елементи рівномірно на всю ширину контейнера */
-    align-items: center; /* Центрує елементи по вертикалі */
-    padding: 10px 15px; /* Встановлює внутрішні відступи для всього розділу */
-}
-
-.guide {
-    display: flex;
-    align-items: center; /* Центрує іконку гіда та ім'я по вертикалі */
-}
-
-.guide-photo {
-    width: 70px;
-    height: 70px;
-    min-width: 70px;  
-    min-height: 70px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-right: 10px;
-    overflow: hidden; 
-}
-
-.guide-name {
-    font-weight: 500; /* Робить текст жирнішим */
-    color: #333; /* Темний колір тексту */
-    flex-grow: 1; /* Дозволяє імені гіда зайняти всю доступну ширину між фото і рейтингом */
-    line-height: 19px;
-}
-
-.rating {
-    color: #C2644F; /* Золотий колір для рейтингу */
-    margin-left: auto; /* Розташовує рейтинг на правому краю розділу */
-}
-
-.price {
-    background-color: #C2644F; /* Темно-червоний фон */
-    color: #FFF; /* Білий текст */
-    padding: 5px 15px; /* Внутрішні відступи для блоку з ціною */
-    border-radius: 20px 0 20px 0; /* Закруглені кути для блоку з ціною */
-    font-weight: 400;
-    text-align: center; /* Центрує текст в блоку ціни */
-}
+    .photo-gallery {
+        position: relative;
+        height: 600px; /* Висота галереї для правильного розміщення фото */
+    }
+    
+    .photo-frame {
+        position: absolute;
+        width: 480px;
+        height: 538px;
+        padding: 20px;
+        background-color: #FEFCF5;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+        /* інші стилі */
+    }
+    
+    .photo-frame .photo {
+        width: 440px;
+        height: 420px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    
+    .caption {
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #1F3030;
+        text-align: left;
+    }
+    
+    /* Стилі для фото */
+    .photo-frame:nth-child(1) {
+        left: 0;
+        transform: rotate(-5deg); /* Нахил першого фото вправо */
+        z-index: 1;
+    }
+    
+    .photo-frame:nth-child(2) {
+        left: 280px; /* Сміщення другого фото, щоб частково накривати інші */
+        transform: rotate(6deg); /* Друге фото рівно */
+        z-index: 3; /* Вищий z-index, щоб бути на передньому плані */
+    }
+    
+    .photo-frame:nth-child(3) {
+        left: 520px;
+        transform: rotate(0deg); /* Нахил третього фото вліво */
+        z-index: 3;
+    }
+    .photo-frame:nth-child(4) {
+        left: 840px; /* Сміщення другого фото, щоб частково накривати інші */
+        transform: rotate(-5deg); /* Друге фото рівно */
+        z-index: 1; /* Вищий z-index, щоб бути на передньому плані */
+    }
+    
+    .photo-frame:nth-child(5) {
+        left: 1020px;
+        transform: rotate(8deg); /* Нахил третього фото вліво */
+        z-index: 2;
+    }
