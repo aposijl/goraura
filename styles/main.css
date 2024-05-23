@@ -325,7 +325,7 @@
   }
   .main-card .cards .card{
     width: 342px;
-    height: 496px;
+    height: 493px;
     background-color: #FEFCF5;
     border-radius: 38px 3px 20px 20px;
     box-shadow: 0 4px 8px rgba(51, 87, 81, 0.25);
@@ -347,11 +347,12 @@
     font-size: 16px;
     line-height: 25px;
     text-align: left;
-    padding: 7px 15px;
+    padding: 7px 22px;
     color: #1F3030;
     margin-top: -10px;
     margin-bottom: 25px;
     background-color: #FEFCF5;
+    min-height: 63.5px;
   }
   
   .central-info {
@@ -399,50 +400,55 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 8px;
     border-top: 1px solid #EEEEEE;
+    width: 100%; /* Фіксована ширина для нижньої секції */
   }
   
   .lower-info {
     display: flex;
     align-items: left;
+    width: 100%; /* Фіксована ширина для нижньої інформації */
   }
   
   .guide-photo {
-    width: 75px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 5px;
+    margin-left: 2px;
     margin-right: 5px;
   }
   
   .guide {
     display: flex;
     align-items: center;
+    width: 60%; /* Фіксована ширина для гіда */
   }
   
   .guide-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 5px;
-    margin-right: -15px;
+    
+    width: calc(100% - 75px); /* Фіксована ширина для інформації гіда */
   }
   
   .guide-name {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+    width: 100%; /* Фіксована ширина для імені гіда */
   }
   
   .rating {
     font-size: 14px;
     color: #C2644F;
+    width: 100%; /* Фіксована ширина для рейтингу */
   }
   
   .price {
-    width: 160px;
+    width: 140px;
     height: 70px;
     font-size: 14px;
     font-weight: 400;
@@ -451,10 +457,10 @@
     border-radius: 20px 0 20px 0;
     text-align: center;
     border: 0;
+    flex-shrink: 0; /* Запобігає зміні розміру кнопки ціни */
   }
   
    .container .button{
-    width: 100%;
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -486,69 +492,62 @@
   input[type="radio"]{
     display: none;
   }
-.photos h2 {
-    margin-bottom: 50px;
-    margin-top: 70px;
-    margin-left: 60px;
+
+
+  .photo-gallery{
+    margin-top: 100px;
+    margin-bottom: -70px;
+
+  }
+
+  .photo-gallery h2 {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 30px;
+    padding-bottom: 100px;
+    
 }
-    .photo-gallery {
-        position: relative;
-        height: 600px; /* Висота галереї для правильного розміщення фото */
-    }
-    
-    .photo-frame {
-        position: absolute;
-        width: 480px;
-        height: 538px;
-        padding: 20px;
-        background-color: #FEFCF5;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        overflow: hidden;
-        /* інші стилі */
-    }
-    
-    .photo-frame .photo {
-        width: 440px;
-        height: 420px;
-        border-radius: 5px;
-        object-fit: cover;
-    }
-    
-    .caption {
-        margin-top: 2px;
-        font-size: 12px;
-        line-height: 20px;
-        color: #1F3030;
-        text-align: left;
-    }
-    
-    /* Стилі для фото */
-    .photo-frame:nth-child(1) {
-        left: 0;
-        transform: rotate(-5deg); /* Нахил першого фото вправо */
-        z-index: 1;
-    }
-    
-    .photo-frame:nth-child(2) {
-        left: 280px; /* Сміщення другого фото, щоб частково накривати інші */
-        transform: rotate(6deg); /* Друге фото рівно */
-        z-index: 3; /* Вищий z-index, щоб бути на передньому плані */
-    }
-    
-    .photo-frame:nth-child(3) {
-        left: 520px;
-        transform: rotate(0deg); /* Нахил третього фото вліво */
-        z-index: 3;
-    }
-    .photo-frame:nth-child(4) {
-        left: 840px; /* Сміщення другого фото, щоб частково накривати інші */
-        transform: rotate(-5deg); /* Друге фото рівно */
-        z-index: 1; /* Вищий z-index, щоб бути на передньому плані */
-    }
-    
-    .photo-frame:nth-child(5) {
-        left: 1020px;
-        transform: rotate(8deg); /* Нахил третього фото вліво */
-        z-index: 2;
-    }
+  .photo-container {
+    height: 300px;
+    width: 730px;
+    margin: 100px auto;
+    position: relative;
+  }
+  
+  .photo-container img {
+    width: 400px;
+    height: 440px;
+    position: absolute;
+    left: 0;
+    offset-path: path('m 0 50 q 75-37 150-37 t 150 37 150 0 150-37 150 37');
+    box-shadow: 1px 1px 3px #0008;
+    transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77,-1.17,.75,.84),box-shadow .3s, border-color .4s, z-index .3s;
+    z-index: 0;
+    border: 14px solid #FEFCF5; 
+    border-bottom: 80px solid #FEFCF5;
+  }
+  
+
+  .photo-container img:hover {
+    transform: scale(1.5);
+    offset-path: path('m 100 55 q 45-0 150-0 t 90 0 90 0 90-0 90 0');
+    box-shadow: 3px 4px 10px #0006;
+    z-index: 999;
+  }
+  
+  
+  .photo-container img:nth-last-child(5):first-child {
+    offset-distance: 0%;
+  }
+  .photo-container img:nth-last-child(4):nth-child(2) {
+    offset-distance: 25%;
+  }
+  .photo-container img:nth-last-child(3):nth-child(3) {
+    offset-distance: 51%;
+  }
+  .photo-container img:nth-last-child(2):nth-child(4) {
+    offset-distance: 75%;
+  }
+  .photo-container img:last-child:nth-child(5) {
+    offset-distance: 100%;
+  }
