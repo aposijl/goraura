@@ -1,16 +1,14 @@
 document.querySelectorAll('.dropbtn').forEach(button => {
     button.addEventListener('click', function(event) {
-      event.preventDefault(); // Запобігає стандартній поведінці посилання
-      event.stopPropagation(); // Зупиняє подальшу обробку події
+      event.preventDefault(); 
+      event.stopPropagation(); 
       
-      // Закриваємо всі відкриті меню, крім того, на яке натиснули
       document.querySelectorAll('.dropdown-content').forEach(drop => {
         if (drop !== this.nextElementSibling) {
           drop.style.display = 'none';
         }
       });
   
-      // Перемикаємо видимість меню
       const dropdownContent = this.nextElementSibling;
       if (dropdownContent.style.display === 'block') {
         dropdownContent.style.display = 'none';

@@ -1,0 +1,384 @@
+main {
+  padding-top: 90px;  
+
+}.toolbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  max-width: 900px; 
+  background-color: #FEFCF5;
+  padding: 10px; 
+  border-radius: 7px; 
+  margin: auto; 
+  margin-bottom: 60px;
+  box-shadow:  0px 0px 30px 8px #05656c4a;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 2px solid #1F3030;
+}
+
+.dropdown:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.dropbtn {
+  background-color: #FEFCF5;
+  color: #1F3030;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.date-picker {
+  display: none;
+  position: absolute;
+  background-color: #FFFDF8;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFDF8;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  background-color: #FEFCF5;
+  color: #1F3030;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dropdown-content button:hover {
+  background-color: #05656c2f;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown .dropbtn:focus + .date-picker {
+  display: block;
+}
+
+.search-btn {
+  background-color: #C2644F;
+  color: #FFFDF8;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 7px;
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.search-btn:hover {
+  background-color: #A9533B; 
+  transform: scale(1.05); 
+}
+
+
+.mountain-range-block h1 {
+  font-size: 44px;
+  text-align: left;
+  margin-left: 40px;
+ margin-bottom: 70px;
+}
+
+.mountain-range-block img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.tours-list {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+width: 100%;
+margin-bottom: 40px;
+flex-direction: row;
+}
+
+
+.card {
+  width: 342px;
+  height: 493px;
+  background-color: #FEFCF5;
+  border-radius: 38px 3px 20px 20px;
+  box-shadow: 0 4px 8px rgba(51, 87, 81, 0.25);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 0px 20px 5px rgba(17, 218, 185, 0.206);
+  transform: scale(1.05);
+}
+
+.tour-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 38px 3px 0 0;
+}
+
+.card .title {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  padding: 7px 22px;
+  color: #1F3030;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  background-color: #FEFCF5;
+  min-height: 63.5px;
+}
+
+.card .central-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -23px;
+}
+
+.card .info-item {
+  display: flex;
+  align-items: center;
+  width: calc(50%);
+  margin-bottom: 20px;
+}
+
+.card .icon {
+  width: 24px;
+  font-size: 20px;
+  color: #C2644F;
+  margin-right: 10px;
+  margin-left: 13px;
+}
+
+.card .text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .label {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 300;
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+.card .value {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: -1px;
+  margin-bottom: -3px;
+}
+
+.card .lower-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-top: 1px solid #EEEEEE;
+  width: 100%;
+}
+
+.card .lower-info {
+  display: flex;
+  align-items: left;
+  width: 100%;
+}
+
+.card .guide {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.card .guide-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 2px;
+  margin-right: 5px;
+}
+
+.card .guide-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(100% - 75px);
+}
+
+.card .guide-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 100%;
+}
+
+.card .rating {
+  font-size: 14px;
+  color: #C2644F;
+  width: 100%;
+}
+
+.card .price {
+  width: 140px;
+  height: 70px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FEFCF5;
+  background-color: #C2644F;
+  border-radius: 20px 0 20px 0;
+  text-align: center;
+  border: 0;
+  flex-shrink: 0;
+}
+
+.comments {
+  padding: 15px 30px 50px;
+  background-color: #ebe3cf; 
+}
+
+.comments-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.comment {
+  width: 700px;
+  background-color: #FEFCF5;
+  padding: 30px;
+  border-radius: 90px 0 50px 50px;
+  box-shadow: 0 0 10px 0 rgba(51, 87, 81, 0.25);
+}
+
+.comment .upper-section, .comment  .lower-section, .comment .central-section {
+  display: flex;
+  gap: 40px;
+}
+
+.comment .central-section {
+  justify-content: space-evenly;
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+
+.comment .lower-section {
+  padding-top: 12px;
+}
+
+.comment .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+}
+.comment .image-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 63px;
+  width: 126px;
+  height: 126px;
+}
+
+.comment img {
+  width: auto;
+  height: 126px;
+}
+
+.comment .user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding-top: 15px;
+}
+
+.comment .user-profile p {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.comment .text-section p, .comment .text-section span {
+  padding-bottom: 2px;
+  font-size: 15px;
+  margin: 0;
+}
+
+.text-section a {
+  color: #C2644F;
+}
+
+.comment .text-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+ 
+}
+
+.comment .text-section p {
+  font-weight: 400;
+  color:  #1F3030;
+}
+
+.comment .text-section span {
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.comment .lower-section h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.comment .label {
+  font-weight: 400;
+  color:  #1F3030;
+}
+
+.comment .value {
+  font-size: 18px;
+  color: #C2644F;
+  font-weight: 400;
+}
+.comment .lower-section button {
+  white-space: nowrap;
+  border: 0;
+  border-radius: 10px;
+  background-color: #C2644F;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.comment .lower-section button:hover {
+  background-color: #d66b54;
+}
+
+.comment .lower-section button:active {
+  background-color: #b05946;
+}

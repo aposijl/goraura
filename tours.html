@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/tours.css">
+  <title>Тури</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img
+      id="menu-button"
+      src="images/mountains-logo.png"
+      alt="logo"
+      style="cursor: pointer"
+    ></a>
+    <div class="header-nav">
+      <a class="page" href="tours.html">обрати тур</a>
+      <a class="page" href="ourTeam.html">інструктори</a>
+      <a class="page" href="tours.html">галерея</a>
+      <a class="page" href="encyclopedia.html">відгуки</a>
+      <a class="page" href="encyclopedia.html">енциклопедія</a>
+    </div>
+  </header>
+  <main>
+    
+    <div class="mountain-range-block">
+      <img src="images/gallerybg.png" class="gallerybg">
+      <h1>ОБРАТИ ТУР</h1>
+      <div class="container">
+        <div class="toolbar">
+          <div class="dropdown">
+              <button class="dropbtn">дата початку ▼</button>
+              <input type="date" class="date-picker">
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">кількість днів ▼</button>
+              <div class="dropdown-content">
+                  <button>менше 3 днів</button>
+                  <button>3-7 днів</button>
+                  <button>8-14 днів</button>
+                  <button>понад 14 днів</button>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">регіон ▼</button>
+              <div class="dropdown-content">
+                  <button>Крим</button>
+                  <button>Карпати</button>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">гід ▼</button>
+              <div class="dropdown-content">
+                  <button>Ірина Бадюлько</button>
+                  <button>Мартин Арсен</button>
+                  <button>Яблоня Данило</button>
+                  <button>Степанюк Вікторія</button>
+                  <button>Єрмілов Михайло</button>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">ціна ▼</button>
+              <div class="dropdown-content">
+                  <button><3000</button>
+                  <button>3000-5000</button>
+                  <button>>5000</button>
+              </div>
+          </div>
+          <button class="search-btn">пошук</button>
+        </div>
+      </div>
+    </div>
+   <div class="tours">
+    <div class="tours-list">
+      <div class="card">
+        <div class="upper-section">
+          <img src="images/tourphoto3.JPG" alt="Hiking in the mountains" class="tour-image">
+          <h5 class="title">Похід на гору Шпиці та озеро Несамовите</h5>
+        </div>
+        <div class="central-section">
+          <div class="central-info">
+            <div class="info-item">
+              <span class="icon">&#10003;</span>
+              <div class="text-group">
+                <span class="label">Дати:</span>
+                <span class="value">30 червня</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#128506;</span>
+              <div class="text-group">
+                <span class="label">Складність:</span>
+                <span class="value">Нормально</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#9201;</span>
+              <div class="text-group">
+                <span class="label">Тривалість:</span>
+                <span class="value">5 днів</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#9968;</span>
+              <div class="text-group">
+                <span class="label">Висота:</span>
+                <span class="value">2061 м</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lower-section">
+        <div class="lower-info">
+          <div class="guide">
+            <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+            <div class="guide-info">
+                <div class="guide-name">Бадюлько Ірина</div>
+                <div class="rating">&#9733; 5,0 (69)</div>
+            </div>
+          </div>
+          <button class="price">від 3000 USD</button>
+        </div>
+      </div>
+      </div>
+      <div class="card">
+        <div class="upper-section">
+          <img src="images/tourphoto2.JPG" alt="Hiking in the mountains" class="tour-image">
+          <h5 class="title">Похід по Карпатам "дикі Горгани"</h5>
+        </div>
+        <div class="central-section">
+          <div class="central-info">
+            <div class="info-item">
+              <span class="icon">&#10003;</span>
+              <div class="text-group">
+                <span class="label">Дати:</span>
+                <span class="value">1 червня</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#128506;</span>
+              <div class="text-group">
+                <span class="label">Складність:</span>
+                <span class="value">Легко</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#9201;</span>
+              <div class="text-group">
+                <span class="label">Тривалість:</span>
+                <span class="value">3 дні</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#9968;</span>
+              <div class="text-group">
+                <span class="label">Висота:</span>
+                <span class="value">1835 м</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lower-section">
+        <div class="lower-info">
+          <div class="guide">
+            <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+            <div class="guide-info">
+                <div class="guide-name">Мартин Арсен</div>
+                <div class="rating">&#9733; 5,0 (69)</div>
+            </div>
+          </div>
+          <button class="price">від 3000 USD</button>
+        </div>
+      </div>
+      </div>
+      <div class="card">
+        <div class="upper-section">
+          <img src="images/tourphoto1.JPG" alt="Hiking in the mountains" class="tour-image">
+          <h5 class="title">Зимове сходження на Шпиці</h5>
+        </div>
+        <div class="central-section">
+          <div class="central-info">
+            <div class="info-item">
+              <span class="icon">&#10003;</span>
+              <div class="text-group">
+                <span class="label">Дати:</span>
+                <span class="value">18 лютого</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#128506;</span>
+              <div class="text-group">
+                <span class="label">Складність:</span>
+                <span class="value">Важко</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#9201;</span>
+              <div class="text-group">
+                <span class="label">Тривалість:</span>
+                <span class="value">5 днів</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#9968;</span>
+              <div class="text-group">
+                <span class="label">Висота:</span>
+                <span class="value">1953 м</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lower-section">
+        <div class="lower-info">
+          <div class="guide">
+            <img src="images/misha.jpg" alt="Guide Photo" class="guide-photo">
+            <div class="guide-info">
+                <div class="guide-name">Єрмілов Михайло</div>
+                <div class="rating">&#9733; 5,0 (69)</div>
+            </div>
+          </div>
+          <button class="price">від 3000 USD</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="card">
+        <div class="upper-section">
+          <img src="images/tourphoto4.JPG" alt="Hiking in the mountains" class="tour-image">
+          <h5 class="title">Сходження на Говерлу і Петрос</h5>
+        </div>
+        <div class="central-section">
+          <div class="central-info">
+            <div class="info-item">
+              <span class="icon">&#10003;</span>
+              <div class="text-group">
+                <span class="label">Дати:</span>
+                <span class="value">3 липня</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#128506;</span>
+              <div class="text-group">
+                <span class="label">Складність:</span>
+                <span class="value">Нормально</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#9201;</span>
+              <div class="text-group">
+                <span class="label">Тривалість:</span>
+                <span class="value">1 день</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#9968;</span>
+              <div class="text-group">
+                <span class="label">Висота:</span>
+                <span class="value">2061 м</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lower-section">
+        <div class="lower-info">
+          <div class="guide">
+            <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+            <div class="guide-info">
+                <div class="guide-name">Яблоня Даня</div>
+                <div class="rating">&#9733; 5,0 (69)</div>
+            </div>
+          </div>
+          <button class="price">від 3000 USD</button>
+        </div>
+      </div>
+      </div>
+</div>
+      <div class="tours-list">
+              <div class="card">
+                <div class="upper-section">
+                  <img src="images/tourphoto3.JPG" alt="Hiking in the mountains" class="tour-image">
+                  <h5 class="title">Похід на гору Шпиці та озеро Несамовите</h5>
+                </div>
+                <div class="central-section">
+                  <div class="central-info">
+                    <div class="info-item">
+                      <span class="icon">&#10003;</span>
+                      <div class="text-group">
+                        <span class="label">Дати:</span>
+                        <span class="value">30 червня</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#128506;</span>
+                      <div class="text-group">
+                        <span class="label">Складність:</span>
+                        <span class="value">Нормально</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#9201;</span>
+                      <div class="text-group">
+                        <span class="label">Тривалість:</span>
+                        <span class="value">5 днів</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#9968;</span>
+                      <div class="text-group">
+                        <span class="label">Висота:</span>
+                        <span class="value">2061 м</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lower-section">
+                <div class="lower-info">
+                  <div class="guide">
+                    <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+                    <div class="guide-info">
+                        <div class="guide-name">Бадюлько Ірина</div>
+                        <div class="rating">&#9733; 5,0 (69)</div>
+                    </div>
+                  </div>
+                  <button class="price">від 3000 USD</button>
+                </div>
+              </div>
+              </div>
+              <div class="card">
+                <div class="upper-section">
+                  <img src="images/tourphoto2.JPG" alt="Hiking in the mountains" class="tour-image">
+                  <h5 class="title">Похід по Карпатам "дикі Горгани"</h5>
+                </div>
+                <div class="central-section">
+                  <div class="central-info">
+                    <div class="info-item">
+                      <span class="icon">&#10003;</span>
+                      <div class="text-group">
+                        <span class="label">Дати:</span>
+                        <span class="value">1 червня</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#128506;</span>
+                      <div class="text-group">
+                        <span class="label">Складність:</span>
+                        <span class="value">Легко</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#9201;</span>
+                      <div class="text-group">
+                        <span class="label">Тривалість:</span>
+                        <span class="value">3 дні</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#9968;</span>
+                      <div class="text-group">
+                        <span class="label">Висота:</span>
+                        <span class="value">1835 м</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lower-section">
+                <div class="lower-info">
+                  <div class="guide">
+                    <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+                    <div class="guide-info">
+                        <div class="guide-name">Мартин Арсен</div>
+                        <div class="rating">&#9733; 5,0 (69)</div>
+                    </div>
+                  </div>
+                  <button class="price">від 3000 USD</button>
+                </div>
+              </div>
+              </div>
+              <div class="card">
+                <div class="upper-section">
+                  <img src="images/tourphoto1.JPG" alt="Hiking in the mountains" class="tour-image">
+                  <h5 class="title">Зимове сходження на Шпиці</h5>
+                </div>
+                <div class="central-section">
+                  <div class="central-info">
+                    <div class="info-item">
+                      <span class="icon">&#10003;</span>
+                      <div class="text-group">
+                        <span class="label">Дати:</span>
+                        <span class="value">18 лютого</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#128506;</span>
+                      <div class="text-group">
+                        <span class="label">Складність:</span>
+                        <span class="value">Важко</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#9201;</span>
+                      <div class="text-group">
+                        <span class="label">Тривалість:</span>
+                        <span class="value">5 днів</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#9968;</span>
+                      <div class="text-group">
+                        <span class="label">Висота:</span>
+                        <span class="value">1953 м</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lower-section">
+                <div class="lower-info">
+                  <div class="guide">
+                    <img src="images/misha.jpg" alt="Guide Photo" class="guide-photo">
+                    <div class="guide-info">
+                        <div class="guide-name">Єрмілов Михайло</div>
+                        <div class="rating">&#9733; 5,0 (69)</div>
+                    </div>
+                  </div>
+                  <button class="price">від 3000 USD</button>
+                </div>
+              </div>
+              </div>
+        
+              <div class="card">
+                <div class="upper-section">
+                  <img src="images/tourphoto4.JPG" alt="Hiking in the mountains" class="tour-image">
+                  <h5 class="title">Сходження на Говерлу і Петрос</h5>
+                </div>
+                <div class="central-section">
+                  <div class="central-info">
+                    <div class="info-item">
+                      <span class="icon">&#10003;</span>
+                      <div class="text-group">
+                        <span class="label">Дати:</span>
+                        <span class="value">3 липня</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#128506;</span>
+                      <div class="text-group">
+                        <span class="label">Складність:</span>
+                        <span class="value">Нормально</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#9201;</span>
+                      <div class="text-group">
+                        <span class="label">Тривалість:</span>
+                        <span class="value">1 день</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <span class="icon">&#9968;</span>
+                      <div class="text-group">
+                        <span class="label">Висота:</span>
+                        <span class="value">2061 м</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lower-section">
+                <div class="lower-info">
+                  <div class="guide">
+                    <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+                    <div class="guide-info">
+                        <div class="guide-name">Яблоня Даня</div>
+                        <div class="rating">&#9733; 5,0 (69)</div>
+                    </div>
+                  </div>
+                  <button class="price">від 3000 USD</button>
+                </div>
+              </div>
+              </div>
+  </div>
+  <div class="tours-list">
+    <div class="card">
+      <div class="upper-section">
+        <img src="images/tourphoto3.JPG" alt="Hiking in the mountains" class="tour-image">
+        <h5 class="title">Похід на гору Шпиці та озеро Несамовите</h5>
+      </div>
+      <div class="central-section">
+        <div class="central-info">
+          <div class="info-item">
+            <span class="icon">&#10003;</span>
+            <div class="text-group">
+              <span class="label">Дати:</span>
+              <span class="value">30 червня</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#128506;</span>
+            <div class="text-group">
+              <span class="label">Складність:</span>
+              <span class="value">Нормально</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#9201;</span>
+            <div class="text-group">
+              <span class="label">Тривалість:</span>
+              <span class="value">5 днів</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#9968;</span>
+            <div class="text-group">
+              <span class="label">Висота:</span>
+              <span class="value">2061 м</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-section">
+      <div class="lower-info">
+        <div class="guide">
+          <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+          <div class="guide-info">
+              <div class="guide-name">Бадюлько Ірина</div>
+              <div class="rating">&#9733; 5,0 (69)</div>
+          </div>
+        </div>
+        <button class="price">від 3000 USD</button>
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="upper-section">
+        <img src="images/tourphoto2.JPG" alt="Hiking in the mountains" class="tour-image">
+        <h5 class="title">Похід по Карпатам "дикі Горгани"</h5>
+      </div>
+      <div class="central-section">
+        <div class="central-info">
+          <div class="info-item">
+            <span class="icon">&#10003;</span>
+            <div class="text-group">
+              <span class="label">Дати:</span>
+              <span class="value">1 червня</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#128506;</span>
+            <div class="text-group">
+              <span class="label">Складність:</span>
+              <span class="value">Легко</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#9201;</span>
+            <div class="text-group">
+              <span class="label">Тривалість:</span>
+              <span class="value">3 дні</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#9968;</span>
+            <div class="text-group">
+              <span class="label">Висота:</span>
+              <span class="value">1835 м</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-section">
+      <div class="lower-info">
+        <div class="guide">
+          <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+          <div class="guide-info">
+              <div class="guide-name">Мартин Арсен</div>
+              <div class="rating">&#9733; 5,0 (69)</div>
+          </div>
+        </div>
+        <button class="price">від 3000 USD</button>
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="upper-section">
+        <img src="images/tourphoto1.JPG" alt="Hiking in the mountains" class="tour-image">
+        <h5 class="title">Зимове сходження на Шпиці</h5>
+      </div>
+      <div class="central-section">
+        <div class="central-info">
+          <div class="info-item">
+            <span class="icon">&#10003;</span>
+            <div class="text-group">
+              <span class="label">Дати:</span>
+              <span class="value">18 лютого</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#128506;</span>
+            <div class="text-group">
+              <span class="label">Складність:</span>
+              <span class="value">Важко</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#9201;</span>
+            <div class="text-group">
+              <span class="label">Тривалість:</span>
+              <span class="value">5 днів</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#9968;</span>
+            <div class="text-group">
+              <span class="label">Висота:</span>
+              <span class="value">1953 м</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-section">
+      <div class="lower-info">
+        <div class="guide">
+          <img src="images/misha.jpg" alt="Guide Photo" class="guide-photo">
+          <div class="guide-info">
+              <div class="guide-name">Єрмілов Михайло</div>
+              <div class="rating">&#9733; 5,0 (69)</div>
+          </div>
+        </div>
+        <button class="price">від 3000 USD</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="card">
+      <div class="upper-section">
+        <img src="images/tourphoto4.JPG" alt="Hiking in the mountains" class="tour-image">
+        <h5 class="title">Сходження на Говерлу і Петрос</h5>
+      </div>
+      <div class="central-section">
+        <div class="central-info">
+          <div class="info-item">
+            <span class="icon">&#10003;</span>
+            <div class="text-group">
+              <span class="label">Дати:</span>
+              <span class="value">3 липня</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#128506;</span>
+            <div class="text-group">
+              <span class="label">Складність:</span>
+              <span class="value">Нормально</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#9201;</span>
+            <div class="text-group">
+              <span class="label">Тривалість:</span>
+              <span class="value">1 день</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">&#9968;</span>
+            <div class="text-group">
+              <span class="label">Висота:</span>
+              <span class="value">2061 м</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-section">
+      <div class="lower-info">
+        <div class="guide">
+          <img src="images/ira.jpg" alt="Guide Photo" class="guide-photo">
+          <div class="guide-info">
+              <div class="guide-name">Яблоня Даня</div>
+              <div class="rating">&#9733; 5,0 (69)</div>
+          </div>
+        </div>
+        <button class="price">від 3000 USD</button>
+      </div>
+    </div>
+    </div>
+    
+</div>
+</div>
+<div class="comments">
+  <h2>ВІДГУКИ НАШИХ МАНДРІВНИКІВ</h2>
+  <div class="comments-list">
+    <div class="comment">
+      <div class="upper-section">
+        <div class="user-profile">
+          <div class="image-container">
+            <img src="images/user-img.jpeg" alt="User image">
+          </div>
+          <p>Бадюлько Ірина</p>
+        </div>
+
+        <div class="text-section">
+          <p>22/08/2022</p>
+          <span>
+            Моя перша вершина. В правій руці льодоруб, в лівій трекінгова палка, на обличчі три шари крему,
+            альпіністські окуляри та літня бандана (про це я жалію, мої губи зараз просто як хінкалі), на ногах кішки,
+            а я піднялась на 5054 метри. Перший раз у житті. І піднялась з групою за 7 годин. Одному із партнерів у
+            звʼязці було погано, його догнала гірська хвороба, а що я?...
+          </span>
+          <a href="https://www.youtube.com">Детальніше</a>
+        </div>
+      </div>
+      <div class="central-section">
+        <div class="rating">
+          <span class="label">робота гіда:</span>
+          <span class="value">&#9733; 5,0</span>
+        </div>
+        <div class="rating">
+          <span class="label">маршрут:</span>
+          <span class="value">&#9733; 5,0</span>
+        </div>
+        <div class="rating">
+          <span class="label">загальне враження:</span>
+          <span class="value">&#9733; 5,0</span>
+        </div>
+      </div>
+      <div class="lower-section">
+        <h3>Сходження на Говерлу і Петрос (2061 м)</h3>
+        <button id="first-button" onclick="signUpForTour()">Обрати цей похід</button>
+      </div>
+    </div>
+
+    <div class="comment">
+      <div class="upper-section">
+        <div class="user-profile">
+          <div class="image-container">
+            <img src="images/user-img.jpeg" alt="User image">
+          </div>
+          <p>Бадюлько Ірина</p>
+        </div>
+
+        <div class="text-section">
+          <p>22/08/2022</p>
+          <span>
+            Моя перша вершина. В правій руці льодоруб, в лівій трекінгова палка, на обличчі три шари крему,
+            Моя перша вершина. В правій руці льодоруб, в лівій трекінгова палка, на обличчі три шари крему,звʼязці було погано, його догнала гірська хвороба, а що я?...
+            звʼязці було погано, його догнала гірська хвороба, а що я?...
+          </span>
+          <a href="https://www.youtube.com">Детальніше</a>
+        </div>
+      </div>
+      <div class="central-section">
+        <div class="rating">
+          <span class="label">робота гіда:</span>
+          <span class="value">&#9733; 5,0</span>
+        </div>
+        <div class="rating">
+          <span class="label">маршрут:</span>
+          <span class="value">&#9733; 5,0</span>
+        </div>
+        <div class="rating">
+          <span class="label">загальне враження:</span>
+          <span class="value">&#9733; 5,0</span>
+        </div>
+      </div>
+      <div class="lower-section">
+        <h3>Сходження на Говерлу і Петрос (2061 м)</h3>
+        <button id="first-button" onclick="signUpForTour()">Обрати цей похід</button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div>
+    <div>
+      <h4>chornohora@gmail</h4>
+    </div>
+    <div>
+      <h4>+3800000000</h4>
+    </div>
+  </div>
+  <h1>
+    Chornohora
+  </h1>
+  <div>
+    <div>
+      <a class="page" href="https://www.instagram.com/aposijl/">Instagram</a>
+    </div>
+    <div>
+      <a class="page" href="https://t.me/aposijl">Telegram</a>
+    </div>
+  </div>
+</footer>
+<script src="scripts/tours.js"></script>
+</body>
+</html>
