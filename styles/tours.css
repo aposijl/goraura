@@ -1,15 +1,16 @@
 main {
-  padding-top: 90px;  
-
-}.toolbar {
+  padding-top: 100px; 
+}
+  
+  .toolbar {
   display: flex;
   justify-content: center; 
   align-items: center; 
   width: 100%;
   max-width: 900px; 
   background-color: #FEFCF5;
-  padding: 10px; 
-  border-radius: 7px; 
+  padding: 10px;
+  border-radius: 7px;
   margin: auto; 
   margin-bottom: 60px;
   box-shadow:  0px 0px 30px 8px #05656c4a;

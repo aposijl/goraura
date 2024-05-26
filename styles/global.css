@@ -25,18 +25,20 @@ a {
   }
 
 p, span {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 button:hover {
     cursor: pointer;
 }
-/*
 a:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
 }
-*/
+
+.card a:hover {
+    text-decoration: none;
+}
 header {
     display: flex;
     justify-content: space-between;
