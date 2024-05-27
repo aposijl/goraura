@@ -46,11 +46,6 @@
   top: 49.5%;
 }
 
-.header-nav a {
-  font-size: 18px;
-  font-weight: 300;
-}
-
 .toolbar {
   position: absolute;
   top: 70%;
@@ -150,9 +145,11 @@
 }
 
 .comments-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  gap: 50px;
 }
 
 .comment {

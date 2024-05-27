@@ -1,0 +1,138 @@
+main {
+  padding-top: 100px; 
+}
+
+.mountain-range-block h1 {
+  font-size: 44px;
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 70px;
+  padding: 0 50px; 
+}
+
+.mountain-range-block img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  padding: 0 50px; 
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.navigation a h2 {
+  font-weight: 400;
+  padding: 0 50px; 
+}
+
+.mountain img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+main p, h1, h3, h4, span, ul {
+  padding: 0 80px;
+}
+
+main p {
+  font-size: 18px;
+}
+
+.border {
+  width: 100%;
+  height: auto;
+}
+
+
+.toggle-button {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #C2644F;
+  color: #FEFCF5;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5px;
+  border-color: #C2644F;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.toggle-button:hover {
+  background-color: #A9533B;
+  transform: scale(1.05);
+}
+
+
+.accordion {
+  width: 100%;
+  padding: 10px 70px;
+  margin-bottom: 30px;
+}
+
+
+.accordion-item {
+  margin-top: 20px;
+}
+
+.accordion-title {
+  background: #C2644F;
+  color: #FEFCF5;
+  padding: 20px;
+  margin: 0;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.accordion-title .icon {
+  position: absolute;
+  right: 20px;
+}
+
+.accordion-content {
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 10px 20px;
+  display: none;
+  overflow: hidden;
+  background: #FEFCF5;
+  font-size: 16px;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.more-button {
+  padding: 15px 25px;
+  font-size: 20px;
+  background-color: #C2644F;
+  color: #FEFCF5;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5px;
+  border-color: #C2644F;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border: none; 
+}
+
+.more-button:hover {
+  background-color: #A9533B;
+}
+

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/feedback.css">
+  <title>Відгуки</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img
+      id="menu-button"
+      src="images/mountains-logo.png"
+      alt="logo"
+      style="cursor: pointer"
+    ></a>
+    <div class="header-nav">
+      <a class="page" href="tours.html">обрати тур</a>
+      <a class="page" href="ourTeam.html">інструктори</a>
+      <a class="page" href="gallery.html">галерея</a>
+      <a class="page" href="feedback.html">відгуки</a>
+      <a class="page" href="encyclopedia.html">енциклопедія</a>
+    </div>
+  </header>
+  <main>
+    <div class="mountain-range-block">
+        <img src="images/gallerybg.png" class="gallerybg">
+        <h1>ВІДГУКИ</h1>
+        <div class="container">
+          <div class="toolbar">
+            <div class="dropdown">
+                <button class="dropbtn">регіон ▼</button>
+                <div class="dropdown-content">
+                    <button>Крим</button>
+                    <button>Карпати</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">гід ▼</button>
+                <div class="dropdown-content">
+                    <button>Ірина Бадюлько</button>
+                    <button>Мартин Арсен</button>
+                    <button>Яблоня Данило</button>
+                    <button>Степанюк Вікторія</button>
+                    <button>Єрмілов Михайло</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">тур ▼</button>
+                <div class="dropdown-content">
+                    <button>Сходження на Говерлу і Петрос</button>
+                    <button>Похід на гору Шпиці та озеро Несамовите</button>
+                    <button>Зимове сходження на Шпиці</button>
+                    <button>Похід на Сивулю, Центральні Горгани</button>
+                    <button>Зимове сходження на Говерлу і Петрос</button>
+                </div>
+            </div>
+            <button class="search-btn">пошук</button>
+          </div>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="comments-list">
+          <div class="comment">
+            <div class="upper-section">
+              <div class="user-profile">
+                <div class="image-container">
+                  <img src="images/sofia.jpg" alt="User image">
+                </div>
+                <p>Литвин Софія</p>
+              </div>
+    
+              <div class="text-section">
+                <p>22/06/2021</p>
+                <span>
+                  Про захід “Сходження на Говерлу та Петрос”, Загалом усе сподобалося, похід був дуже добрим. 
+                  Мені сподобалося зручне розташування нашого будинку, а також чудові мальовничі місця. До умов немає жодних претензій, 
+                  попалася хороша група, не конфліктна та весела..
+                </span>
+                <a href="https://www.youtube.com">Детальніше</a>
+              </div>
+            </div>
+            <div class="central-section">
+              <div class="rating">
+                <span class="label">робота гіда:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+              <div class="rating">
+                <span class="label">маршрут:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+              <div class="rating">
+                <span class="label">загальне враження:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+            </div>
+            <div class="lower-section">
+              <h3>Сходження на Говерлу і Петрос (2061 м)</h3>
+              <button id="first-button" onclick="signUpForTour()">Обрати цей похід</button>
+            </div>
+          </div>
+    
+          <div class="comment">
+            <div class="upper-section">
+              <div class="user-profile">
+                <div class="image-container">
+                  <img src="images/zhenya.jpg" alt="User image">
+                </div>
+                <p>Миненко Євгеній</p>
+              </div>
+    
+              <div class="text-section">
+                <p>07/08/2023</p>
+                <span>
+                  Неймовiрна класна пригода! я не вперше в горах, але це був перший досвiд походу з групою. Не знав пiдiйде менi такий варiант чи нi,
+                   вирiшив спробувати i зовсiм не пошкодував, навіть навпаки) Все перевершило всi моi очiкування! Органiзацiя на вищому рiвнi, 
+                   продуманий мальовничий маршрут
+                </span>
+                <a href="https://www.youtube.com">Детальніше</a>
+              </div>
+            </div>
+            <div class="central-section">
+              <div class="rating">
+                <span class="label">робота гіда:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+              <div class="rating">
+                <span class="label">маршрут:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+              <div class="rating">
+                <span class="label">загальне враження:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+            </div>
+            <div class="lower-section">
+              <h3>Сходження на Говерлу і Петрос (2061 м)</h3>
+              <button id="first-button" onclick="signUpForTour()">Обрати цей похід</button>
+            </div>
+          </div>
+
+          <div class="comment">
+            <div class="upper-section">
+              <div class="user-profile">
+                <div class="image-container">
+                  <img src="images/danik.png" alt="User image">
+                </div>
+                <p>Мороз Данік</p>
+              </div>
+    
+              <div class="text-section">
+                <p>07/08/2023</p>
+                <span>
+                    Незабутній досвід! Це був мій перший груповий похід в гори, і я не був впевнений,
+                     що це для мене, але він виявився чудовим! Все перевищило мої очікування: 
+                    відмінна організація, чарівний маршрут і надзвичайно тепла компанія.
+                </span>
+                <a href="https://www.youtube.com">Детальніше</a>
+              </div>
+            </div>
+            <div class="central-section">
+              <div class="rating">
+                <span class="label">робота гіда:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+              <div class="rating">
+                <span class="label">маршрут:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+              <div class="rating">
+                <span class="label">загальне враження:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+            </div>
+            <div class="lower-section">
+              <h3>Сходження на Говерлу і Петрос (2061 м)</h3>
+              <button id="first-button" onclick="signUpForTour()">Обрати цей похід</button>
+            </div>
+          </div>
+
+          <div class="comment">
+            <div class="upper-section">
+              <div class="user-profile">
+                <div class="image-container">
+                  <img src="images/nazar.JPG" alt="User image">
+                </div>
+                <p>Бичкар Назар</p>
+              </div>
+    
+              <div class="text-section">
+                <p>07/08/2023</p>
+                <span>
+                    Неймовірно захоплююча пригода! Хоча я вже не раз бував у горах, 
+                    цей мій перший досвід з групою виявився вражаючим. Все відбулося краще, ніж я міг очікувати.
+                     Висока якість організації, добре продуманий маршрут, що включав відвідини чарівних куточків
+                      природи, а також дружня атмосфера зробили похід незабутнім. 
+                    Враження від подорожі залишаться зі мною назавжди.
+                </span>
+                <a href="https://www.youtube.com">Детальніше</a>
+              </div>
+            </div>
+            <div class="central-section">
+              <div class="rating">
+                <span class="label">робота гіда:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+              <div class="rating">
+                <span class="label">маршрут:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+              <div class="rating">
+                <span class="label">загальне враження:</span>
+                <span class="value">&#9733; 5,0</span>
+              </div>
+            </div>
+            <div class="lower-section">
+              <h3>Сходження на Говерлу і Петрос (2061 м)</h3>
+              <button id="first-button" onclick="signUpForTour()">Обрати цей похід</button>
+            </div>
+          </div>
+
+          <div class="more-comments">
+
+            <div class="comment">
+                <div class="upper-section">
+                  <div class="user-profile">
+                    <div class="image-container">
+                      <img src="images/yana.jpg" alt="User image">
+                    </div>
+                    <p>Козак Яна</p>
+                  </div>
+        
+                  <div class="text-section">
+                    <p>07/08/2023</p>
+                    <span>
+                        Цей похід став одним з найяскравіших моментів року для мене! Вражаюча природа,
+                         відмінна компанія та досвідчені гіди зробили цю пригоду незабутньою. 
+                         Все було організовано дуже професійно, від їжі до маршрутів,
+                         що дозволило нам повністю поринути у світ природи та відпочинку
+                    </span>
+                    <a href="https://www.youtube.com">Детальніше</a>
+                  </div>
+                </div>
+                <div class="central-section">
+                  <div class="rating">
+                    <span class="label">робота гіда:</span>
+                    <span class="value">&#9733; 5,0</span>
+                  </div>
+                  <div class="rating">
+                    <span class="label">маршрут:</span>
+                    <span class="value">&#9733; 5,0</span>
+                  </div>
+                  <div class="rating">
+                    <span class="label">загальне враження:</span>
+                    <span class="value">&#9733; 5,0</span>
+                  </div>
+                </div>
+                <div class="lower-section">
+                  <h3>Сходження на Говерлу і Петрос (2061 м)</h3>
+                  <button id="first-button" onclick="signUpForTour()">Обрати цей похід</button>
+                </div>
+              </div>
+
+            <div class="comment">
+                <div class="upper-section">
+                  <div class="user-profile">
+                    <div class="image-container">
+                      <img src="images/nastia.jpg" alt="User image">
+                    </div>
+                    <p>Чепенюк Анастасія</p>
+                  </div>
+        
+                  <div class="text-section">
+                    <p>07/08/2023</p>
+                    <span>
+                        Я вражена красою і організацією нашого групового походу!
+                         Лідери були вмотивовані та добре обізнані, забезпечивши безпеку 
+                         та веселощі для всієї групи. Маршрут був ідеально вибраний, 
+                        кожен день приносив нові вражаючі види та враження, які я буду пам'ятати все життя.
+                    </span>
+                    <a href="https://www.youtube.com">Детальніше</a>
+                  </div>
+                </div>
+                <div class="central-section">
+                  <div class="rating">
+                    <span class="label">робота гіда:</span>
+                    <span class="value">&#9733; 5,0</span>
+                  </div>
+                  <div class="rating">
+                    <span class="label">маршрут:</span>
+                    <span class="value">&#9733; 5,0</span>
+                  </div>
+                  <div class="rating">
+                    <span class="label">загальне враження:</span>
+                    <span class="value">&#9733; 5,0</span>
+                  </div>
+                </div>
+                <div class="lower-section">
+                  <h3>Сходження на Говерлу і Петрос (2061 м)</h3>
+                  <button id="first-button" onclick="signUpForTour()">Обрати цей похід</button>
+                </div>
+              </div>
+
+          </div></div>
+          <button class="toggle-button" onclick="togglemoreComments()">більше</button>
+        
+      </div>
+  </main>
+  <footer>
+    <div>
+      <div>
+        <h4>chornohora@gmail</h4>
+      </div>
+      <div>
+        <h4>+3800000000</h4>
+      </div>
+    </div>
+    <h1>
+      Chornohora
+    </h1>
+    <div>
+      <div>
+        <a class="page" href="https://www.instagram.com/aposijl/">Instagram</a>
+      </div>
+      <div>
+        <a class="page" href="https://t.me/aposijl">Telegram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="scripts/feedback.js"></script>
+</html>

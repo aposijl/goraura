@@ -71,12 +71,6 @@ header img {
     z-index: 1000;    
 }
 
-
-.header-nav span {
-    font-size: 18px;
-    font-weight: 300;
-}
-
 .header-nav .page {
     font-size: 16px;
     font-weight: 300;
@@ -114,3 +108,19 @@ footer > div:last-child {
     margin-right: 130px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #dfdac6; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #C2644F;border-radius: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #914332; 
+  }

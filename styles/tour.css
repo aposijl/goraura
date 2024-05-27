@@ -394,8 +394,10 @@ box-shadow: 3px 4px 10px #0006;
 
 .comments .comments-list {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  gap: 50px;
 }
 .comments h2{
   margin-left: 50px;
