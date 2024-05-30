@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/faq.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Підтримка</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img
+      id="menu-button"
+      src="images/mountains-logo.png"
+      alt="logo"
+      style="cursor: pointer"
+    ></a>
+    <div class="header-nav">
+      <a class="page" href="tours.html">обрати тур</a>
+      <a class="page" href="ourTeam.html">інструктори</a>
+      <a class="page" href="gallery.html">галерея</a>
+      <a class="page" href="feedback.html">відгуки</a>
+      <a class="page" href="encyclopedia.html">енциклопедія</a>
+    </div>
+  </header>
+  <main>
+    <div class="mountain-range-block">
+        <img src="images/gallerybg.png" class="gallerybg">
+        <h1>ПІДТРИМКА</h1>
+        
+    </div>
+    <div class="faq" id="faq">
+        <h2>FAQ</h2>
+        <div class="accordion" id="equipments">
+          <div class="accordion-item">
+              <button class="accordion-title" onclick="toggleAccordion(event)">
+                які гарантії, що ви не шахраї?
+                  <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                  <p>Ви можете ознайомитися з нашими групами у соціальних мережах Instagram,
+                     Facebook, переглянути наш Блог, фото і почитати відгуки про нас. 
+                     Це і є гарантія того, що ми надаємо реальні послуги реальним людям,
+                      і Вам нема чого перейматись!</p>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <button class="accordion-title" onclick="toggleAccordion(event)">
+                  хто ми і звідки?
+                  <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                 <p>Доброго вечора ми з України ууууууууууу</p>
+              </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-title" onclick="toggleAccordion(event)">
+               що потрібно мати із собою?
+                <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+                <p>Для участі у поході Вам необхідно мати необхідниймінімум особистого спорядження 
+                    (Спорядження пов’язане зі специфікою заходу: гірське, лижне…). Групове спорядження: 
+                    намети, каструлі, сокиру ми надаємо. Крім того, ми надаємо Вам спеціальне особисте спорядження,
+                     якщо його у Вас немає в наявності. Умови надання спеціального особистого спорядження обумовлюються за кожним маршрутом окремо. 
+                     Спальник, килимок та рюкзак надається за окрему плату, яка не входить у вартість туру.</br></br>
+        
+                  Список спорядження може коригуватися та уточнюватися перед початком туру
+                   нашими інструкторами.</p>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title" onclick="toggleAccordion(event)">
+                    який має бути рівень підготовки?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>У нас багато різних заходів різної складності. У більшості випадків немає особливих вимог до учасників
+                         і може брати участь будь-який бажаючий, а решті ми навчимо (збирати рюкзак, ставити намет і т.д.).
+                          Але є й досить складні сходження, які під силу лише досвідченим та фізично витривалим альпіністам.</br></br>
+
+                        У кожному заході вказані спеціальні вимоги до підготовки учасників, якщо не вказані, то може брати участь будь-яка людина.</br></br>
+                        
+                        Також усі заходи розділені на 5 категорій, від простого до складного, це скрізь також вказано.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title" onclick="toggleAccordion(event)">
+                    чи потрібно брати продукти?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                   <p>Закупкою продуктів для групи займаємося ми. Ви повинні забезпечити себе їжею до виходу на маршрут (поїзд, автобус, інші переїзди). 
+                    Іноді, наприклад, на Новий рік, закуповуємо продукти спільно, це вирішується окремо.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-title" onclick="toggleAccordion(event)">
+                чи повернуть мені передоплату у разі моєї відмови від участі?
+                  <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                  <p>Передплата поверненню не підлягає.</br></br>
+
+                    Гроші, внесені Вами – це невикористаний депозит, який Ви можете використати будь-якої миті протягом цілого року з моменту
+                     початку туру, в якому Ви з якихось причин не змогли брати участь. Також Ви, Ваші родичі чи друзі
+                      зможуть скористатися цим депозитом в іншому поході.</br></br>
+                    
+                    У разі форс-мажору на момент початку проведення заходу (війна, стихія та ін.) передоплата також не повертається.</br></br>
+                    
+                    Повернення передоплати здійснюється лише у випадку, якщо захід припинився з вини організаторів або гіда.</p>
+              </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="contacts">
+<h2>КОНТАКТИ</h2>
+<div class="contacts-section">
+    <div class="contacts-container">
+        <div class="contact-info">
+            <a href="tel:+38000000000" class="link">
+                <i class="fa-solid fa-phone fa-2xl icon" style="color: #1f3251;"></i> +38000000000
+            </a>
+            <a href="mailto:badiulkoiryna@gmail.com" class="link">
+                <i class="fa-regular fa-envelope fa-2xl icon" style="color: #1f3251;"></i> goraura@gmail.com
+            </a>
+            <a href="https://instagram.com/aposijl" class="link">
+                <i class="fa-brands fa-instagram fa-2xl icon" style="color: #1f3251;"></i> GORAURA
+            </a>
+            <a href="https://t.me/aposijl" class="link">
+                <i class="fa-brands fa-telegram fa-2xl icon" style="color: #1f3251;"></i> GORAURA
+            </a>
+        </div>
+        
+        <div class="personal-contact">
+            <img src="images/ira.jpg">
+            <div class="personal-info">
+                <h4>Ірина Бадюлько</h4>
+                <a href="tel:+98364834789">
+                    <i class="fa-solid fa-phone fa-2xl icon" style="color: #1f3251;"></i>
+                    +98364834789
+                </a>
+                <a href="https://t.me/aposijl">
+                    <i class="fa-brands fa-telegram fa-2xl icon" style="color: #1f3251;"></i>
+                    aposijl
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+  </main>
+</body>
+<footer>
+    <div>
+      <div>
+        <h4>chornohora@gmail</h4>
+      </div>
+      <div>
+        <h4>+3800000000</h4>
+      </div>
+    </div>
+    <h1>
+      Chornohora
+    </h1>
+    <div>
+      <div>
+        <a class="page" href="https://www.instagram.com/aposijl/">Instagram</a>
+      </div>
+      <div>
+        <a class="page" href="https://t.me/aposijl">Telegram</a>
+      </div>
+    </div>
+  </footer>
+<script src="scripts/faq.js"></script>
+</html>

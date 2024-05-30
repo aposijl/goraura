@@ -24,3 +24,48 @@ function toggleFullPath() {
         itemHeader.querySelector('.icon').textContent = '-';
     }
 }
+
+
+var modalComment = document.getElementById("modalComment");
+
+var commentButtons = document.querySelectorAll(".comment-button");
+
+var span = document.getElementsByClassName("close")[0];
+
+
+commentButtons.forEach(function(btn) {
+  btn.onclick = function() {
+    modalComment.style.display = "block";
+  }
+});
+
+span.onclick = function() {
+  modalComment.style.display = "none";
+}
+
+
+var modalTour = document.getElementById("modalTour");
+
+var tourButtons = document.querySelectorAll(".tour-button");
+
+var spanTour = modalTour.getElementsByClassName("close")[0];
+
+
+tourButtons.forEach(function(btn) {
+  btn.onclick = function() {
+    modalTour.style.display = "block";
+  }
+});
+
+spanTour.onclick = function() {
+  modalTour.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalComment) {
+    modalComment.style.display = "none";
+  } else if (event.target == modalTour) {
+    modalTour.style.display = "none";
+  }
+}
+
