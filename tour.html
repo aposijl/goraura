@@ -10,21 +10,35 @@
 </head>
 <body>
 
-<header>
-  <a href="index.html"><img
-    id="menu-button"
-    src="images/mountains-logo.png"
-    alt="logo"
-    style="cursor: pointer"
-  ></a>
-  <div class="header-nav">
+  <header>
+    <a href="index.html"><img
+      id="menu-button"
+      src="images/mountains-logo.png"
+      alt="logo"
+      style="cursor: pointer"
+    ></a>
+    <div class="header-nav">
+      <a class="page" href="tours.html">тури</a>
+      <a class="page" href="ourTeam.html">інструктори</a>
+      <a class="page" href="gallery.html">галерея</a>
+      <a class="page" href="feedback.html">відгуки</a>
+      <a class="page" href="encyclopedia.html">енциклопедія</a>
+      <a class="page" href="faq.html">підтримка</a>
+    </div>
+  </header>
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="page" href="index.html">головна</a>
     <a class="page" href="tours.html">обрати тур</a>
     <a class="page" href="ourTeam.html">інструктори</a>
     <a class="page" href="gallery.html">галерея</a>
     <a class="page" href="feedback.html">відгуки</a>
     <a class="page" href="encyclopedia.html">енциклопедія</a>
+    <a class="page" href="faq.html">підтримка</a>
   </div>
-</header>
+  
+  <span class="sidemenu" onclick="openNav()">&#9776;</span>
 
 <main>
     <div class="upper-section">
@@ -392,6 +406,6 @@
       </div>
     </div>
   </footer>
-<script src="scripts/tour.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>

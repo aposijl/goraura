@@ -67,22 +67,24 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  min-width: 100px;
 }
 
 .contacts-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 1040px;
   width: 100%;
+  gap: 40px;
 }
 
 
 .contact-info {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
 }
-  
+
 .link {
   display: flex;
   align-items: center;
@@ -102,6 +104,12 @@ h2 {
   color: black;
   font-size: 16px;
 }
+
+
+.contact-info a{
+  min-width: 210px;
+}
+
 
 .personal-contact img {
   margin-right:12px;
