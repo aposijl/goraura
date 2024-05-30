@@ -167,8 +167,8 @@
 .tours-list{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  justify-content:center;
+  margin: auto;
 }
   
 .tours-list .container{
@@ -180,7 +180,7 @@
 
 .container .main-card{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 200%;
   transition: 1s;
 }
@@ -385,7 +385,8 @@ input[type="radio"]{
 .photo-gallery h2 {
   font-weight: 700;
   font-size: 25px;
-  padding: 30px;   
+  margin-left: -130px;
+  font-size: 25px;
 }
 
 .photo-container {
